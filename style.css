@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color 1.5s ease;
+}
+
+
+.fundo2 {
+    background-color: #131313;
+}
+
+.cor {
+    color: black;
+}
+
+header{
+    background-image: url("./night.jpg");
+    height: 100%;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+
+    font-family: "Abril Fatface", "cursive";
+    font-size: 2.5em;   
+
+    box-shadow: 20px 20px 100px #131313;
+}
+
+
+header > h1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 89vh;
+    font-size: 2em;
+    text-shadow: 3px 3px 0 #000;
+}
+
+header > ul{
+    color: white;
+    text-shadow: 3px 3px 0 #000;
+}
+
+header > div {
+    margin: 0;
+    padding: 0;
+    margin-top: -35vh;
+    margin-right: 20px;
+
+    width: 75vw;
+    margin-left: auto;
+    font-size: 3vw;
+
+    border: 3px solid white;
+    border-radius: 20px
+}
+
+main {
+    width: 75vw;
+    margin: auto;
+}
+
+div.line {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: -350px;
+    background-color: white;
+    height: 3px;
+    width: 110vw;
+}
+
+nav { 
+    transition: background-color 1.5s ease;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    position: fixed; 
+}
+
+nav > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+nav > a:hover {
+    text-decoration: line-through;
+}
+
+main {
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 1.3em;
+}
+
+.sobre-dev {
+    width: 50vw;
+}
+
+div#about {
+    height: 25vh;
+}
+
+img.dev-icon {
+    float: right;
+    display: block;
+    height: 250px;
+    border-radius: 100%;
+    margin-top: -200px;
+}
+
+div.works {
+    margin-top: 50vh;
+}
+
+ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+ul > li > a:hover {
+    text-decoration: line-through;
+}
+
+ul > img {
+    width: 50vw;
+    margin: auto;
+    border-radius: 30px;
+}
+
+img.touimg {
+    margin-bottom: 250px;
+}
+
+div.contacts {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 40px;
+
+    margin: auto;
+    margin-top: 40vh;
+    margin-bottom: 20vh;
+
+    width: 50vw;
+}
+
+div.contacts > ul > li > a {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    header > div {
+        margin: 0;
+        padding: 0;
+        margin: auto;
+        margin-top: -70px;
+        font-size: 0.8em;
+        width: 75vw;
+    }
+
+    header > h1 {
+        margin-bottom: 0;
+        font-size: 1.5em;
+        height: 50vh;
+    }
+
+    img.dev-icon {
+        margin: auto;
+    }
+
+    ul > img {
+        width: 300px;
+        margin-left: -30px;
+    }
+    
+}
+
+
+
