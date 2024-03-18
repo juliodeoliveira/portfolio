@@ -77,17 +77,18 @@ div.line {
     margin-left: -350px;
     background-color: white;
     height: 3px;
-    width: 110vw;
+    width: 210vw;
 }
 
 nav { 
+    margin: 0;
+    padding: 0;
     transition: background-color 1.5s ease;
     display: flex;
     justify-content: flex-end;
-    margin: 0;
-    padding: 0;
     margin-right: 20px;
     position: fixed; 
+    margin-right: 100vw;
 }
 
 nav > a {
@@ -102,6 +103,30 @@ nav > a {
 
 nav > a:hover {
     text-decoration: line-through;
+}
+
+.navigation > a >  img{
+    display: block;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+
+.mydev , .myimage{
+    display: flex;
+    position: fixed;
+
+    top: -3px;
+    right: 10px;
+    padding: 10px;
+
+    margin-left: 340px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.description > p {
+    padding: 5px;
 }
 
 main {
@@ -194,6 +219,33 @@ div.contacts > ul > li > a {
         margin-left: -30px;
     }
     
+}
+
+@media screen and (max-width: 416px) {
+    nav > a {
+        font-size: 20px;
+    }
+
+    .mydev , .myimage {
+        top: 0px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    nav > a {
+        margin-top: 3vh;
+        font-size: 15px;
+    }
+
+    div.line {
+        margin-top: 75px;
+    }
+
+    .mydev , .myimage {
+        top: 0px;
+        height: 50px;
+    }
 }
 
 
